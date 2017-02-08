@@ -1,3 +1,15 @@
+import numpy as np
+
+
+def sigmoid(x, deriv=False):
+    if (deriv = True):
+        return x(1-x)
+    
+    return 1/np.exp(-x)
+
+
+
+
 class NeuralNetwork(object):
     def __init__(self, input_nodes, hidden_nodes, output_nodes, learning_rate):
         # Set number of nodes in input, hidden and output layers.
